@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">automoQUIZ</string>
+    <string name="question_1">Who is generally regarded as the father of the automobile?</string>
+    <string name="question_2">What does BMW mean in English?</string>
+    <string name="logo_question">The logo displayed above belongs to which company?</string>
+    <string name="question_3">The Volvo brand is from which country</string>
+    <string name="question_4">Which car is currently the fastest street legal car?</string>
+    <string name="question_5">Which car is the best selling car of all time?</string>
+    <string name="name_question">Name the car</string>>
+    <string name="hello">Hello</string>
+    <string name="welcome">Welcome to automoQUIZ</string>
+    <string name="name_question_start">What is your name?</string>
+    <string name="start_quiz">Start quiz</string>
+    <string name="name_hint">Name</string>
+    <string name="Hi">Hi</string>
+    <string name="score1">You scored a total of</string>
+    <string name="score2">out of 10, Thanks for playing!</string>
+    <string name="required">Name is required</string>
+</resources>

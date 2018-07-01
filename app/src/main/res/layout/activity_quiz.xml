@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".QuizActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myFAB"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_done_24px"
+        app:backgroundTint="@color/textColor"
+        app:borderWidth="0dp"
+        app:elevation="5dp"
+        android:onClick="submit"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/question_1"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/answer_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/textColor"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/question_2"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/answer_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/textColor"
+                android:textColor="@color/textColor" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/renault" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/logo_question"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Citroen"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/answer_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Renault"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Mazda"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Opel"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/subaru" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/logo_question"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:id="@+id/answer_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Subaru"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Ford"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Acura"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Chevrolet"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/navigator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/name_question"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="BMW X5"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/answer_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Lincoln Navigator"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Ford Explorer"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Cadillac Escalade"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/p1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/name_question"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:id="@+id/answer_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="McLaren P1"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Lamborghini Gallardo"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Porsche 918"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Tesla Model S"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/bmwm3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/name_question"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="BMW X6"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="BMW 5 series"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/answer_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="BMW 3 series"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="BMW 7 series"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/question_3"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:id="@+id/answer_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Sweden"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Nigeria"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Germany"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="France"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/question_4"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Bugatti Veyron SS"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Toyota Camry"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/answer_nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Koenigsegg Agera RS"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="SSC Ultimate Aero"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/question_5"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Ford F Series"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Volkswagen Beetle"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Honda Civic"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/answer_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/textColor"
+                    android:buttonTint="@color/textColor"
+                    android:text="Toyota Corolla"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
